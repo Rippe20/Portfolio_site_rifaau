@@ -7,13 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dealz webapp</title>
     <link href="/img/favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
     <header>
         <div>
             <a href="#" class="logo">Rifaau</a>
-            <nav>
+            <nav class="navigation">
                 <ul>
                     <li><a href="/index.html">Work</a></li>
                     <li><a href="/about.html">About</a></li>
@@ -24,7 +35,7 @@
     </header>
     <main>
         <div>
-            <h1>Dealz</h1>
+            <h3>Dealz</h3>
         </div>
         <div>
             <picture>
@@ -34,41 +45,41 @@
             <p>A web app that shows its customers the best deals and discounts in their proximity.</p>
             <div>
                 <div>
-                    <h5>The Problem</h5>
+                    <h4>The Problem</h4>
                     <p>A lot of people are tired of going through thousands of newspapers looking for the perfect deal
                         or discount. Or their inbox is full of newsletters. It also takes a lot of time to go through
                         all the newsletters and individual websites if you are trying to find a good deal.
                     </p>
-                    <h5>The Solution</h5>
+                    <h4>The Solution</h4>
                     <p>An online platform that shows the deals and discounts close to the users or close to the location
                         they want. This should also provide a way of narrowing down the information so they can find the
                         required information fast and effectively.
                     </p>
                 </div>
                 <div>
-                    <h5>The design Process</h5>
+                    <h4>The design Process</h4>
                     <div>
-                        <h6>Research</h6>
-                        <h4>Competitive Analysis</h4>
+                        <h5>Research</h5>
+                        <h6>Competitive Analysis</h6>
                         <p>An analysis was performed to determine the strengths and weaknesses of competitors in order
                             to guide the development of features and information organization for DEALZ.</p>
                         <picture>
-                            <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)" />
+                            <source srcset="/img/dealz/analysistable.png" media="(max-width:767px)" />
                             <img src="/img/dealz/analysistable.png" alt="Analysis results">
                         </picture>
-                        <div>
-                            <h4>User Interviews</h4>
+                        <div class="interviews">
+                            <h6>User Interviews</h6>
                             <p>To gain additional insights, 3 individuals were interviewed in order to uncover areas of
                                 dissatisfaction, needs and wants with current products, in order to determine how DEALZ
                                 could enhance the experience.</p>
-                            <div>
-                                <h1>"I really don't like the fact that I have to sign up for an app every time I need to
-                                    find a discount."</h1>
+                            <div  class="quotes">
+                                <h4>"I really don't like the fact that I have to sign up for an app every time I need to
+                                    find a discount."</h4>
                                 <p>Merlin | Mainz, DE | 38</p>
-                                <h1>"Every store have their own app and I have to install multiple apps to keep track of
-                                    discounts."</h1>
+                                <h4>"Every store have their own app and I have to install multiple apps to keep track of
+                                    discounts."</h4>
                                 <p>Madien | Koblenz, DE | 32</p>
-                                <h1>"Would love to have all the information I need in one place."</h1>
+                                <h4>"Would love to have all the information I need in one place."</h4>
                                 <p>Thomas | London, UK | 45</p>
                             </div>
                             <div>
@@ -87,20 +98,20 @@
                                 </ul>
                             </div>
                         </div>
-                        <div>
+                        <div class="personas">
                             <h4>User Personas</h4>
                             <p>3 personas were created using collected data to guide decision-making and ensure the
                                 product addresses the needs, frustrations, and goals of its users.</p>
                             <picture>
-                                <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)" />
+                                <source srcset="/img/dealz/persona1.png" media="(max-width:767px)" />
                                 <img src="/img/dealz/persona1.png" alt="persona 1">
                             </picture>
                             <picture>
-                                <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)" />
+                                <source srcset="/img/dealz/persona2.png" media="(max-width:767px)" />
                                 <img src="/img/dealz/persona2.png" alt="persona 2">
                             </picture>
                             <picture>
-                                <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)" />
+                                <source srcset="/img/dealz/persona3.png" media="(max-width:767px)" />
                                 <img src="/img/dealz/persona3.png" alt="persona 3">
                             </picture>
                         </div>
@@ -111,22 +122,22 @@
                             elements for each screen and a user flow was established. I then created a Paper prototype
                             for
                             initial user testing.</p>
-                        <div>
-                            <h4>User flow</h4>
+                        <div class="user-flow">
+                            <h6>User flow</h6>
                             <picture>
                                 <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)" />
                                 <img src="/img/dealz/userflow.png" alt="User flow">
                             </picture>
                         </div>
-                        <div>
-                            <h4>Paper prototype</h4>
+                        <div class="prototype">
+                            <h6>Paper prototype</h6>
                             <picture>
                                 <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)" />
                                 <img src="/img/dealz/paperprototype.png" alt="paperprototype">
                             </picture>
                         </div>
-                        <div>
-                            <h4>Usability testing</h4>
+                        <div class user-test>
+                            <h6>Usability testing</h6>
                             <p>Once a clickable prototype was finalized, it was tested. The goal was to test out the
                                 application on a mobile browser and get feedback to improve the usability. Observations
                                 were
@@ -156,52 +167,52 @@
                         </div>
                     </div>
                     <div>
-                        <h6>Design</h6>
+                        <h5>Design</h5>
                         <div>
-                            <h4>Logo</h4>
+                            <h6>Logo</h6>
                             <picture>
-                                <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)" />
+                                <source srcset="/img/dealz/logo.png" media="(max-width:767px)" />
                                 <img src="/img/dealz/logo.png" alt="logo" />
                             </picture>
                         </div>
                         <div>
-                            <h4>Typography</h4>
+                            <h6>Typography</h6>
                             <p>Dealz was designed with user experience in mind. I chose the Roboto typeface for its
                                 clean and modern design, which made it easy to read on screens of all sizes. Through
                                 user testing, I found that Roboto was well-received by our target audience, who
                                 appreciated its clarity and simplicity</p>
                             <br>
-                            <p>Aa</p>
+                            <p class="typography">Aa</p>
                         </div>
                         <div>
-                            <h4>Colors</h4>
+                            <h6>Colors</h6>
                             <p>I chose a vibrant orange to signify discounts and savings, a light sky blue to represent
                                 reliability and trust, and a dark gray create a clean and modern background.</p>
                             <picture>
-                                <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)" />
+                                <source srcset="/img/dealz/Colors.png" media="(max-width:767px)" />
                                 <img src="/img/dealz/Colors.png" alt="colors" />
                             </picture>
                         </div>
                         <div>
-                            <h4>Final Screens</h4>
+                            <h6>Final Screens</h6>
                             <picture>
-                                <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)" />
+                                <source srcset="/img/dealz/annonatedscreens.png" media="(max-width:767px)" />
                                 <img src="/img/dealz/annonatedscreens.png" alt="mockups" />
                             </picture>
                             <picture>
-                                <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)" />
+                                <source srcset="/img/dealz/allscreens.png" media="(max-width:767px)" />
                                 <img src="/img/dealz/allscreens.png" alt="mockups" />
                             </picture>
                             <picture>
-                                <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)" />
+                                <source srcset="/img/dealz/multiscreenmockup.png" media="(max-width:767px)" />
                                 <img src="/img/dealz/multiscreenmockup.png" alt="mockups" />
                             </picture>
                             <picture>
-                                <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)" />
+                                <source srcset="/img/dealz/iphonemockup.png" media="(max-width:767px)" />
                                 <img src="/img/dealz/iphonemockup.png" alt="mockups" />
                             </picture>
                             <br>
-                            <a href=""><button>Prototype</button></a>
+                            <a href=""><button class="primary-button">Prototype</button></a>
                         </div>
                     </div>
                 </div>
@@ -217,10 +228,10 @@
                     would love to hear from you and learn more about how we can work
                     together to bring your ideas to life.
                 </p>
-                <div>
-                    <a href="mailto:great.barrier.rif@gmail.com"><button>Send Email</button></a>
+                <div ca>
+                    <a href="mailto:great.barrier.rif@gmail.com"><button class="primary-button">Send Email</button></a>
                 </div>
-                <div>
+                <div class="social-container">
                     <!--Social Media Layout and Placeholders-->
                     <a href="https://twitter.com/Rippe207" target="_blank">
                         <img src="/img/twitter.svg" alt="Twitter" />
