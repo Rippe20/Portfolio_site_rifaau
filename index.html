@@ -22,9 +22,9 @@
 
 <body>
   <header>
-    <div>
+    <div class="container">
       <a href="#" class="logo">Rifaau</a>
-      <nav class="navigation">
+      <nav>
         <ul>
           <li><a href="/index.html">Work</a></li>
           <li><a href="/about.html">About</a></li>
@@ -34,11 +34,11 @@
     </div>
   </header>
   <main>
-    <div>
-      <div class="hero">
-        <h5>
+    <div id="hero">
+      <div class="container">
+        <h3>
           Hi, my name is Rifaau.<span> I'm a UI/UX designer based in Frankfurt</span>
-        </h5>
+        </h3>
         <p>
           Welcome to my portfolio website! Here you will find a collection of
           my UI/UX case studies and design projects. As a UI/UX Designer, I am
@@ -48,46 +48,49 @@
         </p>
       </div>
     </div>
-    <div class="work">
-      <div class="workthumnnail">
-        <h5>My Work</h5>
-        <div>
-          <div>
-            <picture>
-              <source srcset="/img/in_love_with_life/thumbnail.png" media="(max-width:767px)" />
-              <img src="/img/in_love_with_life/thumbnail.png" alt="In Love with Life thumbnail" />
-            </picture>
+    <div id="work">
+      <div class="container">
+        <div class="workthumnnail">
+          <h5>My Work</h5>
+          <div class="row">
+            <div>
+              <picture>
+                <source srcset="/img/in_love_with_life/thumbnail.png" media="(max-width:767px)" />
+                <img src="/img/in_love_with_life/thumbnail.png" alt="In Love with Life thumbnail" />
+              </picture>
+            </div>
+            <div class="row">
+              <h6>In love with Life</h6>
+              <p>
+                The In Love with Life app is a platform that sells apparel
+                featuring motivational quotes and uplifting messages, aimed at
+                inspiring and empowering individuals to live their best life.
+              </p>
+              <a href=""><button class="primary-button">View Project</button></a>
+            </div>
           </div>
-          <div>
-            <h6>In love with Life</h6>
-            <p>
-              The In Love with Life app is a platform that sells apparel
-              featuring motivational quotes and uplifting messages, aimed at
-              inspiring and empowering individuals to live their best life.
-            </p>
-            <a href=""><button class="primary-button">View Project</button></a>
-          </div>
-        </div>
-        <div>
-          <div>
-            <picture>
-              <source srcset="/img/dealz/thumbnail.png" media="(max-width:767px)" />
-              <img src="/img/dealz/thumbnail.png" alt="Dealz thumbnail" />
-            </picture>
-          </div>
-          <div>
-            <h6>Dealz</h6>
-            <p>
-              A web app that shows its customers the best deals and discounts
-              in their proximity.
-            </p>
-            <a href="/dealz.html"><button class="primary-button">View Project</button></a>
+          <div class="row">
+            <div>
+              <picture>
+                <source srcset="/img/dealz/thumbnail.png" media="(max-width:767px)" />
+                <img src="/img/dealz/thumbnail.png" alt="Dealz thumbnail" />
+              </picture>
+            </div>
+            <div>
+              <h6>Dealz</h6>
+              <p>
+                A web app that shows its customers the best deals and discounts
+                in their proximity.
+              </p>
+              <a href="/dealz.html"><button class="primary-button">View Project</button></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <footer id="contact">
-      <div>
+    <footer>
+      <div class="container">
+        <div id="contact">
         <h5>Get in Touch</h5>
         <p>
           Thank you for taking the time to visit my portfolio website. If you
@@ -96,7 +99,7 @@
           would love to hear from you and learn more about how we can work
           together to bring your ideas to life.
         </p>
-        <div ca>
+        <div class="email-btn">
           <a href="mailto:great.barrier.rif@gmail.com"><button class="primary-button">Send Email</button></a>
         </div>
         <div class="social-container">
@@ -118,6 +121,7 @@
           <p>© Ali Rifaau Mohamed 2023</p>
         </div>
       </div>
+    </div>
     </footer>
   </main>
 </body>
