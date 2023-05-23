@@ -95,7 +95,6 @@ img {
 
 header {
     background-color: #083b3a;
-    text-align: center;
     width: 100%;
     padding: 10px 0;
     width: [object Object]px;
@@ -109,7 +108,7 @@ header {
 }
 
 main {
-    padding-top: 133px;
+    padding-top: 56px;
 }
 
 .logo {
@@ -126,14 +125,15 @@ main {
 nav>ul {
     list-style-type: none;
     padding: 0;
+    margin: 0
 }
 
-nav>ul>li {
-    display: inline-block;
-}
+.navtoggle li:not(:last-child) {
+    display: none;
+  }
 
 nav>ul>li>a {
-    padding: 0 15px;
+    padding: 0 0 0 15px;
     text-transform: uppercase;
     font-weight: 400;
     color: #052322;
@@ -152,7 +152,36 @@ nav>ul>li>a:focus {
     font-weight: 800;
     color: #840d1c;
 }
+ .icon {
+    padding: none;
+  }
+.navtoggle, .navtoggle.responsive {
+    position: relative;
+  }
 
+.navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 6px;
+    font-size: 20px;
+  }
+  .navtoggle.responsive li  {
+    display: block;
+  }
+  
+  .navtoggle.responsive nav {
+    padding: 24px 0 0;
+  }
+  .navtoggle.responsive li  {
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+
+  }
+  
+  .navtoggle.responsive li:last-child  {
+    padding: 0 0 10px;
+  }
 #hero {
     background-color: none;
     padding: 20px 0;
@@ -181,6 +210,7 @@ nav>ul>li>a:focus {
 .container img {
     width: 100%;
     height: auto;
+
 }
 
 .personas img {
@@ -313,7 +343,7 @@ Medium devices (640px and larger)
         padding: 20px 0 13px;
     }
     header .container {
-        display: flex;
+    
         justify-content: space-between;
         align-items: center;
     }    
@@ -323,7 +353,9 @@ Medium devices (640px and larger)
         float: right;
         margin-top: 4px;
     }
-
+    nav > ul {
+        margin: 1em 0;
+      }
     main {
         padding-top: 99px;
     }
@@ -353,6 +385,16 @@ Medium devices (640px and larger)
         clear: both;
         display: table;
     }
+    nav>ul>li {
+        display: inline-block;
+    }
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
+      }
+      .navtoggle li:last-child {
+        display: none;
+      }
+
 
 }
 
