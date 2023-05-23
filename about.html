@@ -18,19 +18,26 @@
         rel="stylesheet">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <header>
         <div class="container">
-            <a href="index.html" class="logo">Rifaau</a>
-            <nav class="navigation">
-                <ul>
-                    <li><a href="/index.html">Work</a></li>
-                    <li><a href="/about.html">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="navtoggle" id="myNavtoggle">
+                <a href="index.html" class="logo">Rifaau</a>
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="/index.html">Work</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
+                                    class="fas fa-bars"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
@@ -44,48 +51,48 @@
                 </picture>
             </div>
             <div class="row story">
-                    <h5>My Story</h5>
-                    <p>
-                        Hi there, I'm Rifaau, a UX/UI designer from the
-                        beautiful
-                        Maldives. I started my career in the hospitality
-                        industry, where I
-                        learned the importance of creating experiences that
-                        are just as
-                        much functional as delightful for the user.
-                        Eventually, it led me
-                        to realize that my true passion lies in designing
-                        digital
-                        experiences that not only make people's lives easier
-                        but also, at
-                        the same time, more enjoyable.</p>
-                    <p>When I'm not designing, you can usually find me
-                        hitting the
-                        bowling lanes or exploring the great outdoors on
-                        a hike. I find
-                        that these activities help me clear my mind and
-                        come up with new
-                        and fresh ideas for my work.</p>
-                    <p>My design philosophy is centered around
-                        creating clean, functional
-                        designs that prioritize user needs and
-                        goals. I believe that every
-                        design decision should have a purpose and
-                        that the best designs
-                        are often the simplest.</p>
-                    <p>I am always looking for new challenges
-                        and opportunities to learn
-                        and grow as a designer. Whether you're a
-                        potential client or just
-                        someone who shares my passion for
-                        design, I would love to hear
-                        from you. So don't hesitate, simply send
-                        me a text and let's start
-                        creating something great together!
-                    </p>
+                <h5>My Story</h5>
+                <p>
+                    Hi there, I'm Rifaau, a UX/UI designer from the
+                    beautiful
+                    Maldives. I started my career in the hospitality
+                    industry, where I
+                    learned the importance of creating experiences that
+                    are just as
+                    much functional as delightful for the user.
+                    Eventually, it led me
+                    to realize that my true passion lies in designing
+                    digital
+                    experiences that not only make people's lives easier
+                    but also, at
+                    the same time, more enjoyable.</p>
+                <p>When I'm not designing, you can usually find me
+                    hitting the
+                    bowling lanes or exploring the great outdoors on
+                    a hike. I find
+                    that these activities help me clear my mind and
+                    come up with new
+                    and fresh ideas for my work.</p>
+                <p>My design philosophy is centered around
+                    creating clean, functional
+                    designs that prioritize user needs and
+                    goals. I believe that every
+                    design decision should have a purpose and
+                    that the best designs
+                    are often the simplest.</p>
+                <p>I am always looking for new challenges
+                    and opportunities to learn
+                    and grow as a designer. Whether you're a
+                    potential client or just
+                    someone who shares my passion for
+                    design, I would love to hear
+                    from you. So don't hesitate, simply send
+                    me a text and let's start
+                    creating something great together!
+                </p>
 
-                    <a href="files/cv.pdf" download><button class="primary-button"> Download my
-                            Resume</button></a>
+                <a href="files/cv.pdf" download><button class="primary-button"> Download my
+                        Resume</button></a>
             </div>
             <div class="row">
                 <div class="col-md-6">
@@ -147,6 +154,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 </body>
 
