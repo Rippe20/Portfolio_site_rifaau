@@ -251,6 +251,9 @@ p {
     margin-top: 0;
 }
 
+#dealz p {
+    text-align: left;
+}
 .container h5,
 .story h5 {
     text-align: center;
