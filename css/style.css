@@ -397,7 +397,15 @@ Medium devices (640px and larger)
       .navtoggle li:last-child {
         display: none;
       }
-
+      .dealzlogo img{
+        width: 50%;
+        height: auto;
+    }
+    .profilepic {
+        width: auto;
+        height: auto;
+     
+    }
 
 }
 
